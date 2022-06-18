@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <Title>Calculadora de Churrasco</Title>
+    <style>  
+ body {
+background-color: aliceblue;
+font-family: sans-serif;
+color: teal;
+}
+h1 {
+font-size: 280%;
+text-shadow: 2px 2px #1C1C1C;
+font-family: fantasy;
+}
+h2 {
+ font-weight: lighter;
+}
+button{
+ background-color: #32CD32;
+ color: white;
+ padding: 5px 12px;
+ font-size: 16px;
+ border-radius: 10px;
+}
+</style>
+    <script>
+        function Calcular() {
+        var hs = document.getElementById("hs").value*500;
+        var ms = document.getElementById("ms").value*300;
+        var cs = document.getElementById("cs").value*200;
+            var total = parseInt(hs) + parseInt(ms) + parseInt(cs);
+            
+        var pessoa_hs = document.getElementById("hs").value*500;
+        var pessoa_ms = document.getElementById("ms").value*500;
+        var pessoa_cs = document.getElementById("cs").value*500;
+            var pessoa_total = parseInt(pessoa_hs) + parseInt(pessoa_ms) + parseInt(pessoa_cs);
+            
+        var adulto_hs = document.getElementById("hs").value*5;
+        var adulto_ms = document.getElementById("ms").value*5;
+        var total_cerveja = parseInt(adulto_hs) + parseInt(adulto_ms);
+           
+            alert (total/1000 + "Kg de carne"); 
+             alert (pessoa_total/1000 + "L de refrigerante"); 
+              alert (total_cerveja + " latas de cerveja");
+        }
+        </script>
+    </head>
+<body>
+    <h1>CALCULADORA DE CHURRASCO</h1>
+    <br />
+    <h3>Digite a quantidade de pessoas</h3>                
+    <form>
+        <label>Homens: </label>
+        <input id="hs" type="number"/><br />
+        <label>Mulheres: </label>
+        <input id="ms" type="number"/><br />
+        <label>Crianças: </label>
+        <input id="cs" type="number"/><br /><br />
+     <button id="calculo" onclick="Calcular()">Calcular</button> 
+        </form> <br /><br /><br />
+    <div> 
+    <h3>Quantidades: </h3>
+                <label>• Carne: 500g por homem, 300g por mulher e 200g por criança.</label><br />
+                <label>• Refrigerante: 500ml por pessoa.</label> <br />
+                <label>• Cerveja: 5 latas por adulto.</label> 
+    </div>
+    </body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
